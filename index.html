@@ -37,47 +37,69 @@
             
     <main>
     <!-- New Appliances/Pink Section -->
-    <section class="section-1">
+    <section class="new-appliances">
         <div class="wrapper">
             <h2>New Appliances</h2>
     
-            <div class="gallery">
-                <img src="./electric-select/assets/gallery-photo-1.jpg" alt="">
-                <img src="./electric-select/assets/gallery-photo-2.jpg" alt="">
-                <img src="./electric-select/assets/gallery-photo-3.jpg" alt="">
-            </div>
+            <ul class="gallery-flex">
+                <li><img src="./electric-select/assets/gallery-photo-1.jpg" alt=""></li>
+                <li><img src="./electric-select/assets/gallery-photo-2.jpg" alt=""></li>
+                <li><img src="./electric-select/assets/gallery-photo-3.jpg" alt=""></li>
+            </ul>
+        </div>
+    </section>
     
-            <div class="best-appliances">
+    <section class="best-appliances">
+        <div class="wrapper best-appliances-flex">
+            <div class="img-container">
                 <img src="./electric-select/assets/square-photo.jpg" alt="">
+            </div>
+            
+            <div class="text-container">
                 <h2>Best Appliances For Coffee</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sunt illum natus deleniti exercitationem non voluptas animi aspernatur! Veritatis sequi ducimus numquam reprehenderit perspiciatis praesentium quasi molestiae aliquam laboriosam deleniti! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea impedit dolorum ducimus iusto minima labore accusamus libero expedita quasi, perspiciatis laboriosam iste repudiandae ipsam dignissimos, ratione quam magni! Minima, molestiae!</p>
-                <a class="read-more" href="">Read More</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sunt illum natus deleniti exercitationem non voluptas
+                    animi aspernatur! Veritatis sequi ducimus numquam reprehenderit perspiciatis praesentium quasi molestiae aliquam
+                    laboriosam deleniti! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea impedit dolorum ducimus iusto
+                    minima labore accusamus libero expedita quasi, perspiciatis laboriosam iste repudiandae ipsam dignissimos,
+                    ratione quam magni! Minima, molestiae!</p>
+                <button class="read-more">Read More</button>
             </div>
         </div> <!-- end of wrapper -->
     </section>
 
-    <!-- Grey Section -->
-    <section class="section-2">
-        <div class="wrapper">
-            <div class="smoothies">
-                <h2>Smoothies Anyone?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos quia quis, molestias autem exercitationem animi quod, accusamus voluptas dolore ut deserunt, consequatur libero expedita repudiandae beatae. Nemo, aut libero?</p>
-                <a class="read-more"href="">Read More</a>
-                <img src="./electric-select/assets/right-photo.jpg" alt="">
-            </div> <!-- end of smoothies -->
-    
-            <div class="new-home">
-                <img src="./electric-select/assets/left-photo.jpg" alt="">
-                <h2>New Home, New Appliances</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos quia quis, molestias autem exercitationem animi quod, accusamus voluptas dolore ut deserunt, consequatur libero expedita repudiandae beatae. Nemo, aut libero?</p>
-                <a class="read-more"href="">Read More</a>
-            </div> <!-- end of new home -->
-        </div>
-        
+    <!-- Featured Products/Grey Section -->
+    <section class="featured-products">
+            <div class="flex-container-1">
+                <div class="text-container-1">
+                    <h2>Smoothies <span>Anyone?</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos quia quis, molestias autem
+                        exercitationem animi quod, accusamus voluptas dolore ut deserunt, consequatur libero expedita repudiandae
+                        beatae. Nemo, aut libero?</p>
+                    <button class="read-more">Read More</button>
+                </div> <!-- end of text container -->
+
+                <div class="image-container-1">
+                    <img src="./electric-select/assets/right-photo.jpg" alt="">
+                </div> <!-- end of image container-->
+            </div>
+                
+            <div class="flex-container-2">
+                <div class="image-container-2">
+                    <img src="./electric-select/assets/left-photo.jpg" alt="">
+                </div> <!-- end of image container -->
+
+                <div class="text-container-2">
+                    <h2>New Home, New <span>Appliances</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos quia quis, molestias autem
+                        exercitationem animi quod, accusamus voluptas dolore ut deserunt, consequatur libero expedita repudiandae
+                        beatae. Nemo, aut libero?</p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
     </section>
     
-    <!-- Bottom Links -->
-    <div class="bottom-links">
+    <!-- Bottom Nav -->
+    <div class="bottom-nav">
         <a href="">Shop</a>
         <a href="">Jobs</a>
         <a href="">Events</a>
@@ -89,10 +111,12 @@
             <div class="subscribe">
                 <h3>Stay Updated</h3>
                 <p>Subscribe to our newsletter to stay updated</p>
-                <input type="form" label="email address">
-                <div class="subscribe-button">
-                    <a href="">Subscribe</a>
+                <div class="subscribe-container">
+                    <input type="form" label="email address" placeholder="email address">
+                    
+                    <button class="subscribe-button">Subscribe</button>
                 </div>
+                
             </div> <!-- end of subscribe-->
 
             <div class="contact-info">
@@ -119,7 +143,7 @@
 
         <!-- Footer -->
         <footer>
-            <div class="footer">
+            <div class="wrapper">
                 <p>Copyright (c) 2022 Juno College</p>
             </div>
         </footer>

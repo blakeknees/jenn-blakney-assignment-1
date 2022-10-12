@@ -11,7 +11,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 /* Universal Styles */
 html {
     font-size: 125%;
-    /* font-family: 'Josefin Sans', sans-serif; */
 }
 
 h1, h2, h3, p, ul {
@@ -23,10 +22,8 @@ h1, h2, h3 {
     font-family: Emblema One;
     color: #1D81CC;
     font-weight: 400;
-}
-
-h2:first-child {
-    text-align: center;
+    text-transform: uppercase;
+    /* letter-spacing: 1mm; */
 }
 
 ul {
@@ -42,20 +39,31 @@ img {
     max-width: 100%;
 }
 
+button {
+    font-family: Emblema One;
+    text-transform: uppercase;
+}
+
 .wrapper {
-    max-width: 1080px;
-    width: 80%;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 
 p {
     font-family: Barlow;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+span {
+    display: block;
 }
 
 /* Header Section  */
 header {
     background-image: url('./electric-select/assets/header-alt.png');
-    height: 70vh;
+    height: 85vh;
     background-size: cover;
     background-position: center;
     /* padding: 20px 0; */
@@ -70,12 +78,12 @@ header {
     display: flex;
 }
 
-.header-nav a {
+.header-nav li {
     display: inline-block;
     padding: 15px 0 15px 30px;
     font-family: Catamaran, sans-serif;
     font-size: .6rem;
-    font-weight: 600;
+    font-weight: 400;
     list-style: none;
     text-transform: uppercase;
     color: #042259;
@@ -91,30 +99,97 @@ h1 {
     text-transform: uppercase;
 }
 
- h1 span {
-    display: block;
- }
-/* Pink Section */
-.section-1 {
+/* New Appliances Gallery */
+.new-appliances {
     background-color: #FCDDE2;
 }
 
-/* .read-more:first-child */
+.new-appliances h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 50px 0;
+}
 
-/* Grey Section */
-.section-2 {
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.gallery-flex li {
+    width: calc((100% /3) - 20px);
+    margin: 0 10px 20px;
+}
+
+/* Best Appliances/Pink Section */
+.best-appliances {
+    background-color: #FCDDE2;
+}
+
+.best-appliances-flex {
+    display: flex;
+    padding: 40px 0;
+}
+
+.text-container {
+    width: 80%;
+}
+
+.img-container {
+    /* width: 20%; */
+    margin-right: 20px;
+}
+
+.text-container p {
+    /* font-size: 1rem; */
+    margin: 25px 0;
+}
+
+.text-container button {
+    border: 4px solid #042259;
+    background-color: #042259;
+    padding: 10px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Featured Products/Grey Section */
+.featured-products {
     background-color: #f0f5ff;
+    /* display: flex */
+}
+
+.flex-container-1, .flex-container-2 {
+    display: flex;
+}
+
+.flex-container-1 .text-container-1, .flex-container-2 .text-container-2 {
+    width: 65%;
+    padding: 100px 100px 0 100px;
+}
+
+.flex-container-1 p, .flex-container-2 p {
+    padding: 15px 0 15px 0;
+}
+
+.flex-container-1 button, .flex-container-2 button {
+    border: 4px solid #F5C8CF;
+    background-color: #F5C8CF;
+    color: #042259;
+    padding: 10px;
 }
 
 /* Bottom Links */
-.bottom-links {
+.bottom-nav {
     background-color: #FCDDE2;
     display: flex;
     justify-content: space-evenly;
 }
 
-.bottom-links a {
+.bottom-nav a {
     font-family: Emblema One;
+    text-transform: uppercase;
     color: #1D81CC;
     font-weight: 400;
     margin: 40px 10px;
@@ -129,7 +204,24 @@ h1 {
 .contact-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    padding: 80px 0 80px 0;
+}
+
+.subscribe-container {
+    display: inline-block;
+    border: 1px solid #F5C8CF;
+}
+
+.subscribe-button {
+    border: 4px solid #FCDDE2;
+    background-color: #FCDDE2;
+    color: #042259;
+    font-size: .75rem;
+    padding: 5px;
+}
+
+input {
+    border: none;
 }
 
 .site-links {
@@ -139,9 +231,130 @@ h1 {
     text-align: right;
 }
 /* Footer */
-.footer {
+footer {
     background-color: #042259;
+    font-family: Barlow, sans-serif;
     color: white;
+    text-align: center;
 }
 
-/* Media Query */
+footer p {
+    padding: 15px 0;
+}
+
+
+/* Media Queries */
+@media (max-width: 480px) {
+
+    .wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+        background-size: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #FCDDE2;;
+    }
+    /* .header-flex {
+        flex-direction: column;
+    } */
+
+    /* nav ul {
+        flex-direction: column;
+    } */
+
+    nav ul a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Best Appliances/Pink Section */
+
+    /* Gallery */
+    .gallery-flex {
+        display: flex;
+    }
+    
+    .gallery-flex li {
+        width: calc((100% /2) - 20px);
+        margin: 0 10px 20px;
+    }
+
+    .gallery-flex li:nth-of-type(3) {
+        display: none;
+    }
+
+    /* Best Appliances */
+    .best-appliances-flex {
+        flex-direction: column;
+        text-align: justify;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .img-container,
+    .text-container {
+        width: 95%;
+    }
+
+    .text-container h2 {
+        text-align: center;
+    }
+
+    .img-container {
+        margin: 0 0 20px 0;
+    }
+
+    .img-container img {
+        width: 100%;
+    }
+
+    /* Featured Products/Grey Section */
+    .featured-products {
+        background-color: #FCDDE2;
+    }
+    .featured-products button {
+        border: 4px solid #042259;
+        background-color: #042259;
+        padding: 10px 5px 10px 5px;
+        color: white;
+    }
+    .flex-container-1 {
+        flex-direction: column-reverse;
+        text-align: justify;
+        align-items: center;
+        justify-items: center;
+    }
+    .flex-container-2 {
+        flex-direction: column;
+        text-align: justify;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .img-container-1,
+    .text-container-1 {
+        width: 95%;
+    }
+
+    .text-container-1 h2 {
+            text-align: center;
+        }
+    
+    .img-container-1 {
+            margin: 0 0 20px 0;
+        }
+    
+    .img-container-1 img {
+            width: 100%;
+        }
+
+    .flex-container-1 .text-container-1,
+    .flex-container-2 .text-container-2 {
+        width: 65%;
+        padding: 100px 100px 0 100px;
+    }
+}
